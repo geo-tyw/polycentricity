@@ -1,0 +1,17 @@
+SUM: The total population size of all centers in the city.
+SUM 1: The population size of a specific center.
+areanew: The area of the center (after filling in missing data), in square kilometers (km²).
+poly: Specifies whether the center is a primary (major) or secondary (sub) center. "major" denotes the primary center, while "sub" indicates a secondary center.
+number: The rank of the center’s population size among all centers in the city. A value of 1 indicates the primary center, with subsequent values representing decreasing population sizes. The higher the number, the smaller the population, and the further it ranks within the city.
+NEAR_DIST: The shortest distance from the center to the primary center, measured by non-geometric center distance.
+cityname: The pinyin name of the city.
+省: The Chinese name of the province where the city is located.
+省code: The administrative code of the province where the city is located.
+市: The Chinese name of the city, including the word "市."
+市code: The city code, a combination of the city's size and administrative code. It consists of five digits, with the first digit representing the city's size (refer to the "class" field), the second and third digits indicating the province, and the fourth and fifth digits identifying the city. For example, 32201 corresponds to Changchun, where 3 represents a Class I large city, 22 represents Jilin Province, and 01 denotes Changchun's ranking within the province, with 2201 being the administrative code for Changchun.
+城: The Chinese name of the city, excluding the word "市."
+等级: The classification of the city based on its size, such as a mega city, super large city, Class I large city, or Class II large city.
+class: The city's size classification, where 1 represents a mega city, 2 represents a super large city, 3 represents a Class I large city, and 4 represents a Class II large city.
+ID: The unique code for the center, formed by combining the "市code" and "number" fields. Each of the 414 centers has a distinct ID. For example, the ID for the primary center in Weifang, Shandong is 4370701, where 4 indicates a Class II large city, 37 represents Shandong Province, 07 stands for Weifang, and 01 denotes the primary center.
+Subcount: The number of secondary centers in the city.
+majorpop: The population size of the primary center in the city.
